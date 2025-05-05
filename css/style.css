@@ -1,0 +1,161 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos (header, main, footer) em coluna */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1; /* Faz com que o main cresça para ocupar o espaço restante */
+}
+
+.lancamento-destaque {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lancamento-destaque img {
+    max-width: 50%; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.imagens-veiculo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+}
+
+.imagens-veiculo img {
+    width: calc(33.33% - 10px); /* Para ocupar um terço da largura com espaçamento */
+    height: auto;
+}
+
+.tabela-modelos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-modelos th, .tabela-modelos td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+.formulario-contato label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato input[type="tel"],
+.formulario-contato select,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-contato button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Para a transição opcional */
+}
+
+.formulario-contato button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Empurra o footer para a base */
+}
+
+.redes-sociais {
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .lancamento-destaque img {
+        max-width: 80%;
+    }
+
+    .imagens-veiculo img {
+        width: calc(50% - 10px);
+    }
+
+    .formulario-contato {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagens-veiculo img {
+        width: 100%;
+    }
+}
