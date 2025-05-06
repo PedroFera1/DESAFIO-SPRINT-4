@@ -159,3 +159,8 @@ footer {
         width: 100%;
     }
 }
+.imagem-galeria {
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: 20vh; /* define a altura da imagem relativa à altura da viewport */
+}
