@@ -90,9 +90,6 @@ main {
 }
 
 .formulario-contato {
-    max-width: 500px;
-    margin: 0 auto;
-    display: grid;
     gap: 10px;
 }
 
@@ -173,7 +170,6 @@ footer {
     }
 }
 .galeria {
-    width: 100%;
     height: 100%; /* Mantém a proporção da imagem */
     justify-content: center;
     justify-items: center;   
@@ -181,7 +177,10 @@ footer {
         
 }
 .galeria img{
-    width: 33%;
-    height: 170%;
+    width: 100%;
 
+}
+#Posicionamento {
+    display: flex;
+    justify-content: center;
 }
