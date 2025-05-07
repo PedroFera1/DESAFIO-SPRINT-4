@@ -209,13 +209,13 @@ footer {
     align-items: center;
 }
 
-.comparaçao {
+.comparacao {
     text-align: center;
     pad: 20px;
     padding-bottom: 20px;
 
 }
-.comparaçao {
+.comparacao {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -250,7 +250,7 @@ footer {
     border-radius:7px;
     width: 12rem;
     height: 3rem;
-    right: -52.3rem;
+    right: -37.3rem;
     font-size: 120%;
     color: white;
     
