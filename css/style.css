@@ -4,14 +4,19 @@
 }
 
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #fff;
+    padding: 10px;
     text-align: center;
+    
+    
 }
 
 header img {
-    max-width: 200px; /* Ajuste conforme necessário */
+    max-width: 230px; /* Ajuste conforme necessário */
     height: auto;
+    position: relative;
+    bottom: -0.5rem;
+    
 }
 
 nav ul {
@@ -19,16 +24,23 @@ nav ul {
     padding: 0;
     margin: 20px 0 0;
     text-align: center;
+    
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #1351d8;
+    padding-left: 30px;
+    position: relative;
+    top: -3.3rem;
+
+
 }
 
 main {
@@ -131,7 +143,8 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: auto; /* Empurra o footer para a base */
+    margin-top: 17.41rem; /* Empurra o footer para a base */
+    
 }
 
 .redes-sociais {
@@ -142,7 +155,13 @@ footer {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-}
+    }
+    .redes {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+    }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
@@ -184,3 +203,56 @@ footer {
     display: flex;
     justify-content: center;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comparaçao {
+    text-align: center;
+    pad: 20px;
+    padding-bottom: 20px;
+
+}
+.comparaçao {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.modelo {
+    border: 1px solid #ccc;
+    pad: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+
+}
+
+.modelo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+ 
+}
+
+.modelo p {
+    margin: 10px;
+
+}
+
+.comparar {
+    position: relative;
+    background-color: #007bff;
+    padding: 10px;
+    border: none;
+    border-radius:7px;
+    width: 12rem;
+    height: 3rem;
+    right: -52.3rem;
+    font-size: 120%;
+    color: white;
+    
+}
+    
