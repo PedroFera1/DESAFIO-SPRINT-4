@@ -46,7 +46,9 @@ nav a {
 main {
     padding: 20px;
     flex-grow: 1; /* Faz com que o main cresça para ocupar o espaço restante */
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .logo {
     justify-content: left;
@@ -58,7 +60,6 @@ main {
     justify-content: center;
     justify-items: center;
     text-align: center;
-
 }
 #video-container{
     justify-content: center;
@@ -147,24 +148,17 @@ footer {
     
 }
 
-.redes-sociais {
-    margin-bottom: 10px;
-}
-
-.redes-sociais a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    }
-    .redes {
+.redes{
         display: flex;
         align-items: center;
         gap: 10px;
         white-space: nowrap;
-    }
+}
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -257,11 +251,7 @@ footer {
     
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .botao{
     display: flex;
