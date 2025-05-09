@@ -157,8 +157,7 @@ footer {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-
-
+        
     nav ul li {
         display: block;
         margin: 10px 0;
