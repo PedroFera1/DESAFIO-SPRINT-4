@@ -12,8 +12,7 @@ header {
 }
 
 header img {
-    max-width: 20%; /* Ajuste conforme necessário */
-    
+    max-width: 20%; /* Ajuste conforme necessário */    
     position: relative;
     bottom: -0.5rem;
     
